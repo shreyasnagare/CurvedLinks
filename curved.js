@@ -24,7 +24,9 @@ function drawLink(x1, y1, x2, y2, curvature, label){
   push();
   fill(0);
   translate(x, y);  
+  if(a<0)a+=Math.PI;
   rotate(a);
+  strokeWeight(0);
   textSize(LABEL_SIZE);
   text(label, 0, 0); 
   pop();
